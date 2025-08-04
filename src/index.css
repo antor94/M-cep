@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@utility container {  margin-inline: auto; }
+
+/* --------------- variable */
+
+@theme{
+
+  /* --------------- color */
+  --color-main :#0B0109;
+  --color-red :#EF0101;
+
+
+
+  /* ------------- font */
+  --font-inter : "Inter", sans-serif;
+  --font-com :"Cormorant Garamond", serif;
+  --font-dm :"DM Sans", sans-serif;
+  --font-ow:"Oswald", sans-serif;
+}
