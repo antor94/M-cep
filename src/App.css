@@ -10,3 +10,163 @@
 
 /* -------------------------- font- ow */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+
+/* From Uiverse.io by Cevorob */ 
+.burger {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+}
+
+.burger input {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: white;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 5px;
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 28px;
+  left: 5px;
+}
+
+
+.btn2{
+
+      cursor: pointer;
+  border: none;
+  font-size: 34px; 
+  font-weight: 800;
+font-family: "Cormorant Garamond", serif;
+ font-style: italic;
+ color: #EF0101 !important;
+
+  width: 200px !important;
+  height: 200px !important;
+  position: absolute;
+  top: -250px !important;
+  left: -102px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  display: grid;
+  place-content: center;
+  transition:
+    background 300ms,
+    transform 200ms;
+}
+
+/* From Uiverse.io by Giannasaurus */ 
+.button {
+  cursor: pointer;
+  border: none;
+  font-size: 34px; 
+  font-weight: 800;
+font-family: "Cormorant Garamond", serif;
+ font-style: italic;
+  color: #EF0101;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 40px;
+  left: -102px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  display: grid;
+  place-content: center;
+  transition:
+    background 300ms,
+    transform 200ms;
+}
+
+.button__text {
+  position: absolute;
+  inset: 0;
+  animation: text-rotation 8s linear infinite;
+
+  > span {
+    position: absolute;
+    transform: rotate(calc(19deg * var(--index)));
+    inset: 7px;
+  }
+}
+
+.button__circle {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  font-size: 60px;
+  overflow: hidden;
+  rotate: 90deg;
+  color: #EF0101;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.btn_circle{
+      width: 80px;
+  height: 1px;
+  rotate: 0deg;
+
+}
+
+.button__icon--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+
+
+@keyframes text-rotation {
+  to {
+    rotate: 360deg;
+  }
+}

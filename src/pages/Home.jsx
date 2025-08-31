@@ -6,6 +6,8 @@ import Lovely from '../components/Lovely'
 import Ready from '../components/Ready'
 import Blog from '../components/Blog'
 import Discover from '../components/Discover'
+import Banner from '../components/banner'
+import ImgBanner from '../components/ImgBanner'
 
 
 const Home = () => {
@@ -14,7 +16,8 @@ const Home = () => {
 
 
 
-
+<Banner />
+<ImgBanner />
     <Enjoy />
     <Many />
     <Discover />

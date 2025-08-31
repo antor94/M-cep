@@ -7,22 +7,37 @@ const Navbar = () => {
   return (
     <>
     
-    <nav id="navbar" style={{ background: `URL(${navBannar})`,  backgroundRepeat: `no-repeat`, backgroundSize: `cover`, }}>
+    <nav id="navbar" style={{ background: `URL(${navBannar})`,  backgroundRepeat: `no-repeat`, backgroundSize: `cover`, }} className='py-[29px]'>
         <div className="container">
-            <div>
+            <div id='navbar-row' className='flex justify-between items-center'>
+<div className='flex gap-[129px]  items-center'>
+
+
 
     {/* ------------- logo */}
 
     <Link to={'/'}><img src={logo} alt="nav-logo" /> </Link>
     {/* ----------- nav-items */}
     <div>
-        <ul>
-            <li><Link to={'/'} >About</Link></li>
-            <li><Link to={'/'} >Project</Link></li>
-            <li><Link to={'/'} ></Link></li>
-            <li><Link to={'/'} ></Link></li>
+        <ul className='flex items-center gap-[30px]'>
+            <li className='text-[16px] font-normal font-inter text-[#fff]'><Link to={'/'} >About</Link></li>
+            <li className='text-[16px] font-normal font-inter text-[#fff]'><Link to={'/'} >Project</Link></li>
+            <li className='text-[16px] font-normal font-inter text-[#fff]'><Link to={'/'} >Blog</Link></li>
+            <li className='text-[16px] font-normal font-inter text-[#fff]'><Link to={'/'} >Pricing</Link></li>
+            <li className='text-[16px] font-normal font-inter text-[#fff]'><Link to={'/'} >Studio</Link></li>
+            <li className='text-[16px] font-normal font-inter text-[#fff]'><Link to={'/'} >Contact</Link></li>
         </ul>
     </div>
+
+</div>
+
+    {/* <!-- From Uiverse.io by Cevorob -->  */}
+<label class="burger" for="burger">
+  <input type="checkbox" id="burger" />
+  <span></span>
+  <span></span>
+  <span></span>
+</label>
 
            
             </div>

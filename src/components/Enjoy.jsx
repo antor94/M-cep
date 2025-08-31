@@ -3,13 +3,18 @@ import Enjoybanner from '../assets/images/enjoy-banner.png'
 import { IoHandLeft } from "react-icons/io5";
 import { Link } from 'react-router';
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+import { CgArrowLongRight } from "react-icons/cg";
 
 const Enjoy = () => {
+
+
+  const text = 'with jeniferlofez Connect';
+
   return (
     <>
     
     
-    <section id='Enjoy' className=''>
+    <section id='Enjoy' className='pt-[120px]'>
         <div className="container">
             <div id='enjoy_row' className='flex  justify-around'>
                 {/* ----------------- h2 */}
@@ -23,7 +28,23 @@ const Enjoy = () => {
                 </div>
 
 {/* ------------------- enjoy-banner */}
-            <div><img src={Enjoybanner} alt="enjoy-banner" /></div>
+            <div><img src={Enjoybanner} alt="enjoy-banner" />
+
+            
+                <button id='enjoy_btn' className="button btn2 ">
+                  <p className="button__text flex">
+                    {text.split('').map((char, index) => (
+                      <span key={index} style={{ '--index': index }}>
+                        {char === ' ' ? '\u00A0' : char}
+                      </span>
+                    ))}
+                  </p>
+            
+                  <div className="button__circle btn_circle">  <CgArrowLongRight />  </div> 
+                 </button>
+            
+            </div>
+
             </div>
             <div className='flex justify-center pt-[60px]'>
 
