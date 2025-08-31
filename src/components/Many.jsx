@@ -19,10 +19,10 @@ const Many = () => {
                     <div className=''>
 
                     <div className=' leading-[40px]'>
-                        <p className='text-[20px] font-normal font-dm text-main'>2021 - The Artist Award</p>
-                        <p className='text-[20px] font-normal font-dm text-main'>2020 - MKEL/Best Prir</p>
-                        <p className='text-[20px] font-bold font-dm text-[#EF0101]'>2019 - Portrait Award</p>
-                        <p className='text-[20px] font-normal font-dm text-main'>2018 - Berlin Talent</p>
+                        <p className='text-[20px] font-normal hover:font-bold  font-dm  text-main hover:text-[#EF0101]'>2021 - The Artist Award</p>
+                        <p className='text-[20px] font-normal hover:font-bold  font-dm  text-main hover:text-[#EF0101]'>2020 - MKEL/Best Prir</p>
+                        <p className='text-[20px] font-normal hover:font-bold  font-dm  text-main hover:text-[#EF0101]'>2019 - Portrait Award</p>
+                        <p className='text-[20px] font-normal hover:font-bold  font-dm  text-main hover:text-[#EF0101]'>2018 - Berlin Talent</p>
                     
                     </div>
 
